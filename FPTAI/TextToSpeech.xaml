@@ -1,0 +1,29 @@
+﻿<Window x:Class="FPTAI.TextToSpeech"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FPTAI"
+        mc:Ignorable="d"
+        Title="TextToSpeech" Height="450" Width="800">
+    <Grid>
+        <Button Name="convertBtn" Content="Chuyển" HorizontalAlignment="Left" Margin="320,238,0,0" VerticalAlignment="Top" Width="143" Click="convertBtn_Click" Height="30"/>
+        <Border BorderBrush="AliceBlue" BorderThickness="1">
+            <TextBox Name="textBoxContent" HorizontalAlignment="Left" Height="40" Margin="183,162,0,0" TextWrapping="Wrap" 
+            Text="Tin tức 24h, đọc báo Thanh Niên cập nhật tin nóng online Việt Nam và thế giới mới nhất trong ngày, tin nhanh thời sự, chính trị, xã hội hôm nay, tin tức chính thống Việt Nam"
+            VerticalAlignment="Top" Width="514"/>
+        </Border>
+        <StackPanel Margin="183,126,230,250">
+            <ComboBox x:Name="voiceSelection">
+                <ComboBoxItem x:Name="leminh" Content="Lê Minh"/>
+                <ComboBoxItem x:Name="banmai" Content="Ban Mai"/>
+                <ComboBoxItem x:Name="thuminh" Content="Thu Minh"/>
+                <ComboBoxItem x:Name="giahuy" Content="Gia Huy"/>
+                <ComboBoxItem x:Name="myan" Content="Mỹ An"/>
+                <ComboBoxItem x:Name="lannhi" Content="Lan Nhi"/>
+            </ComboBox>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Margin="118,164,0,0" TextWrapping="Wrap" Text="Nội dung:" VerticalAlignment="Top" Height="24" Width="65"/>
+        <TextBlock HorizontalAlignment="Left" Margin="118,126,0,0" TextWrapping="Wrap" Text="Giọng nói:" VerticalAlignment="Top" Height="24" Width="65"/>
+    </Grid>
+</Window>
